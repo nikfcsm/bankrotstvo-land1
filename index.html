@@ -18,6 +18,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 		<link rel="stylesheet" href="css/jquery.modal.min.css" />
 
+	
+
+
 
 	</head>
 
@@ -78,7 +81,7 @@
 							<div class="price__block">
 								<p class="price">1490₽ <span class="old-price">2490</span></p>
 
-								<a class="goods-more" href="#">Подробнее</a>
+								<a class="goods-more" href="#good1" rel="modal:open">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -156,6 +159,7 @@
 			</div>
 		</section>
 		<section class="bankrotstvo">
+		
 			<h2>Банкротство «От нуля до результата»</h2>
 			<div class="container">
 
@@ -220,35 +224,66 @@
 			</div>
 		</section>
 		<section class="questions">
-			<div class="container">
-				<h2>остались вопросы?</h2>
+			<div class="grad_foot"></div>
+			<div class="container ">
+				<h2 class="posr">остались вопросы?</h2>
 				<hr>
-				<h3><span>Оставь заявку</span> и я свяжусь с тобой!</h3>
-				<form class="footer-form" action="/send.php" method="post">
+				<h3 class="posr"><span>Оставь заявку</span> и я свяжусь с тобой!</h3>
+				<form class="footer-form posr" action="/send.php" method="post">
 					<input class="input-form" type="text" placeholder="Ваше имя" requred="">
-					<input class="input-form" type="text" placeholder="Ваш телефон" requred="">
+					<input id="phone" class="input-form" type="text" placeholder="Ваш телефон" requred="">
 					<input class="input-form" type="text" placeholder="Ваш email" requred="">
 					<input class="submit-btn" type="submit">
 
 				</form>
 
+				<div class="footer__social posr">
+					<a class="" href="vk.com"><img src="/img/vk.png" alt=""></a>
+					<a class="" href="tg.com"><img src="/img/telegram.png" alt=""></a>
+					<a class="" href="viber.com"><img src="/img/viber.png" alt=""></a>
+				</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+				
+				  
+			
 
 
 			</div>
 		</section>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+		<script>
+			$.fn.setCursorPosition = function (pos) {
+		if ($(this).get(0).setSelectionRange) {
+			$(this).get(0).setSelectionRange(pos, pos);
+		} else if ($(this).get(0).createTextRange) {
+			var range = $(this).get(0).createTextRange();
+			range.collapse(true);
+			range.moveEnd('character', pos);
+			range.moveStart('character', pos);
+			range.select();
+		}
+	};
+			$("#phone").click(function () {
+				$(this).setCursorPosition(3);
+			}).mask("+7(999) 999-99-99");
+			$("#center_not_ok").mask("+7(999) 999-99-99");
+
+
+			$("#phone").mask("+7(999) 999-99-99");
+
+		
+		</script>
+		
+		<div id="good1" class="modal">
+		<div class="modal-product">
+			<div class="modal-product-left"><img src="/img/good1.jpg" alt=""></div>
+			<div class="modal-product-right">
+				Гайд «Привлечение клиентов в банкротство
+
+			</div>
+		</div>
+			<a href="#" rel="modal:close">Close</a>
+		  </div>
 	</body>
 </html>

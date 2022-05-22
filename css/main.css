@@ -344,7 +344,7 @@ hr {
     max-width: 1300px;
     margin: 0 auto;
     background: linear-gradient(#5e6e85f5, #48648bd6), url(/img/products_bg.png) no-repeat right top;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .products_item img {
@@ -545,7 +545,7 @@ hr {
 }
 /* Sections questions */
 .questions {
-    height: 1000px;
+    padding-bottom: 100px;
     position: relative;
     margin: 0 auto;
     max-width: 1300px;
@@ -558,11 +558,13 @@ hr {
     color: #ff914d;
 }
 .questions h3 {
+    line-height: 120%;
     padding-top: 100px;
     text-align: right;
     font-size: 60px;
 color:#fff
 }
+.questions h3, .footer-form, .footer__social {padding-right: 40px;}
 .questions span {
     color: #ff914d;
     display: block;
@@ -590,7 +592,8 @@ height: 40px;
 
 
 input::placeholder {
- 
+    padding-left: 15px;
+ margin-left: 15px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -599,6 +602,7 @@ input::placeholder {
     color: #516580;
   }
   input {
+    padding-left: 15px;
     color: #4e78b0;
   }
   input {outline:none;}
@@ -608,9 +612,58 @@ input::placeholder {
    
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 28px;
     line-height: 116.28%;
     letter-spacing: 0.02em;
     color: #4e78b0;
     
   }
+  .footer__social {
+    margin-left: auto;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.submit-btn {
+    outline: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    width: auto;
+    border-radius: 40px;
+    font-size: 39px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background: #ff914d;
+}
+.grad_foot {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(176deg,#516580, #ffffff00);
+    height: 100%;
+    /* top: -71px; */
+}
+.posr {
+    z-index: 2;
+    position: relative;
+}
+
+/* Modal products styles */
+.modal-product {
+    display: flex;
+}
+.modal-product-left {
+    flex-basis: 30%;
+}
+
+.modal-product-left img {
+    object-fit:cover;
+    width: 100%;
+  
+}
