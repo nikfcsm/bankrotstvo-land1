@@ -1,7 +1,12 @@
-body {
-    overflow-x: hidden;
-}
-@media (max-width:380px) and (min-width:300px) {
+
+@media (max-width:768px) and (min-width:300px) {
+    ul.tabs li.current, ul.tabs li {
+        font-size: 24px;
+    }
+    .tab-content {
+        padding: 15px 0;
+    }
+
     .head__container {
         padding: 0;
     }
@@ -19,7 +24,8 @@ body {
     max-width: 100%;
 }
 .bankrotstvo h2 {
-    font-size: 38px;
+    font-size: 26px;
+    padding: 50px 0;
 }
 .strat__slogan {
     font-size: 47px;
@@ -44,6 +50,7 @@ body {
     font-size: 50px;
 }
 .head__container_right {
+    margin: 0 auto;
     padding-right: 0;
 }
 .about__name {
@@ -60,7 +67,7 @@ body {
     width: 7%;
 }
 .about__hr_right {
-    width: 78%;
+    width: 73%;
 }
 .about_descr {
     font-size: 13px;
@@ -74,8 +81,9 @@ body {
     font-size: 18px;
 }
 .about__digit {
-
-    justify-content: space-between;
+    position: relative;
+    justify-content: space-evenly;
+    z-index: 2;
 }
 .start__button_connect {
     font-size: 24px;
@@ -115,4 +123,97 @@ body {
 
     padding-top: 30px;
 }
+.bankrotstvo__img_main { display: none;}
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+.products_item {
+    flex-basis: 48%;
+}
+.footer-form {
+  
+    max-width: 60%;
+}
+.bankrotstvo h3 {
+    margin-top: 50px;
+}
+.bankrotstvo__block_right {
+    max-width: 56%;
+}
+.bankrotstvo__block_right-buttons {
+  
+    max-width: 100%;
+}
+.bankrotstvo h2 {
+    font-size: 58px;
+}
+.about_descr {
+    font-size: 30px;
+}
+.about__hr_right {
+  
+    width: 75%;
+}
+.head__container_circle {
+    max-width: 100%;
+}
+.head__container_left {
+    flex-basis: 40%;
+}
+.strat__slogan {
+    font-size: 50px;
+}
+.start__connect {
+    font-size: 50px;
+}
+.head__container {
+
+    flex-wrap: nowrap;
+}
+.start__button_connect {
+    width: 200px;
+    font-size: 30px;
+}
+.strat__button_about {
+    width: 100px;
+    font-size: 30px;
+}
+.products {
+
+    background-size: cover;
+}
+
+}
+
+
+@media (max-width: 1300px) and (min-width: 1024px) {
+    .head__container {
+
+        flex-wrap: nowrap;
+    }
+    .price {
+        padding-left: 20px;
+    }
+    .bankrotstvo__img_main {
+        max-width: 86%;
+    }
+    .bankrotstvo__block_right {
+        max-width: 50%;
+    }
+    .bankrotstvo h3 {
+        margin-top: 90px;
+    }
+    .footer-form {
+
+        max-width: 40%;
+    }
+    .about h3 {
+        z-index: 2;
+        position: relative;
+
+    }
+    .bankrotstvo h2 {
+        font-size: 78px;
+    }
 }

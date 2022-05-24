@@ -36,13 +36,13 @@
 					<div class="strat__slogan">на БФЛ?</div>
 					<div class="start__connect">Присоединяйся к нам!</div>
 					<div class="start__button_group">
-						<div class="start__button_connect">присоединиться</div>
-						<div class="strat__button_about">обо мне</div>
+						<a href="#connect" class="start__button_connect">присоединиться</a>
+						<a href="#about_me" class="strat__button_about">обо мне</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="about">
+		<section id="about_me" class="about">
 			<div class="container nth">
 				<!-- <img src="/img/timur.png" alt=""> -->
 				<h2>обо мне</h2>
@@ -223,7 +223,7 @@
 		<section class="questions">
 			<div class="grad_foot"></div>
 			<div class="container ">
-				<h2 class="posr">остались вопросы?</h2>
+				<h2 id="connect" class="posr">остались вопросы?</h2>
 				<hr>
 				<h3 class="posr"><span>Оставь заявку</span> и я свяжусь с тобой!</h3>
 				<form class="footer-form posr" action="/send.php" method="post">
@@ -564,7 +564,7 @@
 	
 			<div class="modal-button-block">
 				<a class="start__button_buy_modal" href="">приобрести</a>
-				<a class="strat__button_programm" href="">связаться</a>
+				<a onclick="document.getElementById('good9').style.display='none'" class="strat__button_programm"  href="#connect" >связаться</a> 
 			</div>
 		</div>
 	</div>
@@ -582,5 +582,6 @@
 
 			})
 		</script>
+	
 	</body>
 </html>
