@@ -1,0 +1,118 @@
+body {
+    overflow-x: hidden;
+}
+@media (max-width:380px) and (min-width:300px) {
+    .head__container {
+        padding: 0;
+    }
+    .products_item {
+              flex-basis: 100%;
+    }
+.footer-form {
+      max-width: 100%;
+}
+
+.footer__social {
+      max-width: 100%;
+}
+.bankrotstvo__block_right {
+    max-width: 100%;
+}
+.bankrotstvo h2 {
+    font-size: 38px;
+}
+.strat__slogan {
+    font-size: 47px;
+    padding-right: 15px;
+}
+.start__button_group {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    align-content: center;
+    align-items: center;
+}
+.about h3, .about_descr {
+    position: relative;
+    z-index: 2;
+}
+.start__connect {
+    text-align: center;
+    
+    padding-top: 53px;
+    font-size: 50px;
+}
+.head__container_right {
+    padding-right: 0;
+}
+.about__name {
+    color: rgb(255 255 255);
+    font-size: 66px;
+}
+.about::after {
+    width: 55%;
+    height: 100%;
+    background-size: 85%;
+    left: -17px;
+}
+.about__hr_left {
+    width: 7%;
+}
+.about__hr_right {
+    width: 78%;
+}
+.about_descr {
+    font-size: 13px;
+}
+.about__digit p {
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.4);
+    padding-left: 0;
+}
+.about__digit span {
+    font-size: 18px;
+}
+.about__digit {
+
+    justify-content: space-between;
+}
+.start__button_connect {
+    font-size: 24px;
+    width: 35%;
+}
+.strat__button_about {
+
+    width: 30%;
+
+    font-size: 24px;
+}
+.modal-product {
+    display: flex;
+    justify-content: space-between;
+    background: url(/img/goods/good1-bg.png) no-repeat;
+    background-size: cover;
+    padding: 10px;
+    flex-direction: column;
+}
+.bankrotstvo__block p {
+    max-width: 100%;
+}
+.bankrotstvo__block_right-buttons {
+    max-width: 100%;
+}
+.questions h3 {
+   
+    padding-top: 100px;
+    text-align: center;
+    font-size: 46px;
+    padding-right: 0;
+}
+.bankrotstvo h3 {
+    margin-top: 50px;
+}
+.products__wrapper1 {
+
+    padding-top: 30px;
+}
+}
